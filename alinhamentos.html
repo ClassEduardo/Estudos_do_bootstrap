@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap alignment</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+  <body style="margin-bottom: 200px;padding: 16px;">
+
+   <!--  
+      XXL = XX-Large / tela >= 1400px
+      XL = X-Large / tela >= 1200px
+      LG = Large / tela >= 992px
+      MD = Medium / tela >= 768px
+      SM = Small / tela >= 576px
+   -->
+   <p class="text-xxl-end">xxl = XX-Large --> Tela >= 1400px</p>
+   <p class="text-xl-end">xl = X-Large --> Tela >= 1200px</p>
+   <p class="text-lg-end">lg = Large --> Tela >= 992px</p>
+   <p class="text-md-end">md = Medium --> Tela >= 768px</p>
+   <p class="text-sm-end">sm = Small --> Tela >= 576px</p>
+   
+   <br>
+   <br>
+
+   <!-- Elemento block para inline -->
+   <h1 class="bg-success d-inline">Lorem ipsum dolor</h1>
+   <p class="bg-success d-inline">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+   <br>
+   <br>
+
+   <!-- Elemento inline para block -->
+   <span class="bg-primary d-blick">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+   <br>
+   <span class="bg-primary d-blick">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+   
+   <br>
+   <br>
+
+   <!-- Elemento Inline-Block -->
+   <div class="bg-warning">
+      <h2 class="bg-success d-inline-block">Lorem Ipsum</h2>
+      <h2 class="bg-success d-inline-block" style="margin-top: 20px;width: 400px;">Lorem Ipsum</h2>
+   </div>
+
+    <script src="/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
