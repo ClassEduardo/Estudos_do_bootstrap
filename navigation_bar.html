@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Barra de van</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+  <body style="margin-bottom: 200px;padding: 10px;background-color: rgb(255, 255, 255);">
+
+   <!-- 
+      tipos de nav:           alinhamentos:
+      nav-pills               justify-content-center
+      nav-tabs                justify-content-end
+      .                       flex-column
+   -->
+   <h2>Navegação simples</h2>
+   <ul class="nav nav-tabs justify-content-center">
+      <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+      <li class="nav-item"><a href="#" class="nav-link active">Sobre</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">Serviços</a></li>
+   </ul>
+
+   <h2>Navegação simples 2.0</h2>
+   <nav class="navbar navbar-expand navbar-dark bg-dark">
+      <a href="" class="navbar-brand">Chale Hotel</a>
+
+      <ul class="navbar-nav ms-auto"> 
+         <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+         <li class="nav-item"><a href="#" class="nav-link ">Sobre</a></li>
+         <li class="nav-item"><a href="#" class="nav-link">Serviços</a></li>
+      </ul>
+   </nav>
+
+   <h2>Barra de nav com menu responsivo </h2>
+   <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <a href="" class="navbar-brand">Chale Hotel</a>
+
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+         <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+         <ul class="navbar-nav ms-auto"> 
+            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link ">Sobre</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Serviços</a></li>
+         </ul>
+      </div>
+   </nav>
+
+   <h2>Barra de nav responsiva com FORM</h2>
+   <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <a href="" class="navbar-brand">Chale Hotel</a>
+
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav3">
+         <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav3">
+         <ul class="navbar-nav ms-auto"> 
+            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link ">Sobre</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Serviços</a></li>
+         </ul>
+
+         <form action="" class="d-flex">
+            <input type="text" class="form-control" placeholder="pesquisar...">
+            <button class="btn btn-outline-success">OK</button>
+         </form>
+      </div>
+   </nav>
+
+   <h2>Barra de nav responsiva com FORM</h2>
+   <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <a href="" class="navbar-brand">Chale Hotel</a>
+
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav2">
+         <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav2">
+         <ul class="navbar-nav ms-auto"> 
+            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link ">Sobre</a></li>
+            
+            <li class="nav-item dropdown">
+               <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Serviços</a>
+               <div class="dropdown-menu">
+                  <a href="" class="dropdown-item">Serviço 1</a>
+                  <a href="" class="dropdown-item">Serviço 2</a>
+                  <a href="" class="dropdown-item">Serviço 3</a>
+               </div>
+            </li>
+         </ul>
+      </div>
+   </nav>
+
+    <script src="/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
